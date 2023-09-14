@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <title>ASB DATA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+<!-- HEADER -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <p>Explore our wide range of services that we provide.</p>
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ Services.image_url }}" class="card-img-top" alt="{{ Services.img_alt }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ Services.name }}</h5>
+                <p class="card-text">{{ Services.description }}</p>
+                <a href="{{ Services.destination_url }}" class="btn btn-primary"> buy </a>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    <ul class="cards">
+        <!-- AIRTIME TOPUP -->
+        <li class="card">
+            <a href="./templates/airtime.html">
+                <img src="images/call.png" alt="img">
+                <h3>
+                    Airtime TopUp
+                </h3>
+                <p>Making an Online recharge has become very easy and safe on ASBDATA.COM.
+                </p>
+            </a>
+        </li>
+        <!-- BUY DATA -->
+        <li class="card">
+            <a href="./templates/buydata.html">
+                <img src="images/wireless.png" alt="img">
+                <h3>
+                    Buy Data
+                </h3>
+                <p>
+                    Start enjoying this very low rate dataplan for your internet browsing Databundle.
+                </p>
+            </a>
+        </li>
+        <!-- CABLE SUBSCRIPTION -->
+        <li class="card">
+            <a href="./templates/cable.html">
+                <img src="images/tv.png" alt="img">
+                <h3>
+                    Cable Subscription
+                </h3>
+                <p>
+                    instantly Activate Cable Subscription with favourable discount compare to others.
+                </p>
+            </a>
+
+        </li>
+        <!-- AIRTIME TO CASH -->
+        <li class="card">
+            <a href="#airtimetocash">
+                <img src="images/cash.png" alt="img">
+                <h3>
+                    Airtime To Cash
+                </h3>
+                <p>
+                    Cover your airtime easily to cash here at ASBDATA.COM with less Charges.
+                </p>
+            </a>
+        </li>
+        <!-- UTILITY BILL PAYMENT -->
+        <li class="card">
+            <a href="#utility">
+                <img src="images/light.png" alt="img">
+                <h3>
+                    Utility Bills Payment
+                </h3>
+                <p>
+                    Because we understand your needs, we have made bill and utilities payment more convenient.
+                </p>
+            </a>
+        </li>
+        <!-- BULK SMS -->
+        <li class="card">
+            <a href="#bulksms">
+                <img src="images/sms.png" alt="img">
+                <h3>
+                    Bulk SMS
+                </h3>
+                <p>
+                    Get your sms in bulk at convenient rates, all you have to do is SIGN UP NOW.
+                </p>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<!-- HERO SECTION -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo"><a href="#">ASB DATA</a></h2>
+        <input type="checkbox" title="menu" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </label>
+        <ul class="all-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="./templates/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- OUR SERVICES -->
+<section class="homepage" id="home">
+    <div class="content">
+        <div class="text">
+            <h1>Welcome to ASBdata.com</h1>
+            <p>
+                Asbdata.com is a registered telecommunication company that provide voice or data transmission services,
+                such as; Mobile Data, Cable Sub, Electric Bill, Airtime (VTU).
+            </p>
+        </div>
+        <a href="./templates/login.html">Get Started</a>
+    </div>
+</section>
+
+<!-- DATA PLANS -->
+<section class="data" id="data">
+    <h2>Our Data Plans</h2>
+    <ul class="cards">
+        <!-- MTN DATA -->
+        <li class="card">
+            <img src="images/9mobile.png" alt="img">
+            <h3>9 MOBILE</h3>
+            <table>
+                <tr>
+                    <td>500MB</td>
+                    <td>30-Days</td>
+                    <td>₦200</td>
+                </tr>
+            </table>
+            <div class="buybtn">
+                <a href="./templates/buydata.html?network=9mobile">Buy Now</a>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- ABOUT US -->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Asbdata.com is a registered telecommunication company that provide voice or data transmission services, such as;
+        Mobile Data, Cable Sub, Electric Bill, Airtime (VTU).
+    </p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial" id="testimonial">
+    <h2>Testimonials</h2>
+    <ul class="cards">
+        <li class="card">
+            <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta consectetur ipsum ab fugiat rerum.
+                Tempora corporis ea minus iure cum quisquam rerum quae aliquam. Id, velit? Accusantium, pariatur.
+                Aperiam, numquam!</q>
+            <p>John Smith</p>
+        </li>
+        <li class="card">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime maiores, cum itaque, quod laudantium
+                sapiente dolorem enim cupiditate in voluptatibus tenetur asperiores fuga molestiae quae? Soluta iste
+                sunt nobis nisi.</q>
+            <p>John Smith</p>
+        </li>
+        <li class="card">
+            <q>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita odit libero minima rerum assumenda
+                enim repellendus labore consequuntur. Non incidunt temporibus molestias quod dolorum illum labore
+                voluptatum iure nisi dolor?</q>
+            <p>John Smith</p>
+        </li>
+    </ul>
+</section>
+
+<!-- CONTACT US -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out to us for any inquiries or feedback.</p>
+    <div class="row">
+        <div class="col information">
+            <div class="contact-details">
+                <p><i class="fas fa-envelope"></i> info@mydata.com</p>
+                <p><i class="fas fa-phone"></i> (+234) 8060222193</p>
+                <p><i class="fas fa-clock"></i> 24/7 Service</p>
+                <p><i class="fas fa-globe"></i> www.mydata.com</p>
+            </div>
+        </div>
+        <div class="col form">
+            <form>
+                <input type="text" placeholder="Name*" required>
+                <input type="email" placeholder="Email*" required>
+                <textarea placeholder="Message*" required></textarea>
+                <button id="submit" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="./templates/policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Data</h4>
+                <ul>
+                    <li><a href="./templates/buydata.html?network=mtn">MTN</a></li>
+                    <li><a href="./templates/buydata.html?network=airtel">AIRTEL</a></li>
+                    <li><a href="./templates/buydata.html?network=glo">Glo</a></li>
+                    <li><a href="./templates/buydata.html?network=9mobile">9mobile</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#testimony">Testimonies</a></li>
+                    <li><a href="#bill">Bill Payment</a></li>
+                    <li><a href="#cable">Cable Subscription</a></li>
+                    <li><a href="#pay">Bulk SMS</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <ul>
+                    <li><a href="whatsapp.com">Whatsapp</a></li>
+                    <li><a href="facebook.com">Facebook</a></li>
+                    <li><a href="twitter.com">Twitter</a></li>
+                    <li><a href="instagram.com">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p>© 2023 ASBDATA</p>
+</footer>
+
+
+</body>
+</html>
